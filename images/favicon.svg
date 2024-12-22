@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="1080px" height="1080px" viewBox="0 0 1080 1080">
+<defs>
+<font horiz-adv-x="2048">
+<!--  Font Name: Renogare Regular
+Vendor ID: UKWN
+Copyright \(c\) 2016 by Deepak Singh Dogra. All rights reserved.
+URL for more Information: http://www.adobe.com/go/font_vendor_id?ID=UKWN&Name=Renogare&PSName=Renogare-Regular&applanguage=en_US-->
+<font-face font-family="Renogare_Regular" units-per-em="2048" ascent="2150" descent="717"/>
+
+<glyph unicode="N" horiz-adv-x="1696" d="
+M 482 852
+L 1516 -47 1516 1495 1192 1495 1192 631 160 1544 160 0 482 0 482 852 Z"/>
+
+<glyph unicode="X" horiz-adv-x="1606" d="
+M 604 741
+L 24 0 432 0 807 498 1181 0 1587 0 1009 741 1597 1495 1194 1495 807 979 420 1495 12 1495 604 741 Z"/>
+</font>
+</defs>
+
+<g transform="matrix( 2.4726104736328125, -0.0030364990234375, 0.0030364990234375, 2.4726104736328125, 167.2,173) ">
+<clipPath id="Mask_Mask_1">
+<rect x="-2" y="-2" width="1133.65" height="284" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_1)" writing-mode="lr"><tspan x="0" y="210" baseline-shift="0%" kerning="auto" font-family="Renogare_Regular" font-size="200" fill="#000000" fill-opacity="0.6078431372549019" xml:space="preserve">NX</tspan></text>
+</g>
+
+<g transform="matrix( 2.4726104736328125, -0.0030364990234375, 0.0030364990234375, 2.4726104736328125, 265.45,248.3) ">
+<clipPath id="Mask_Mask_2">
+<rect x="-2" y="-2" width="1124.15" height="284" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_2)" writing-mode="lr"><tspan x="0" y="210" baseline-shift="0%" kerning="auto" font-family="Renogare_Regular" font-size="200" fill="#000000" fill-opacity="0.6078431372549019" xml:space="preserve">NX</tspan></text>
+</g>
+
+<g transform="matrix( 2.4726104736328125, -0.0030364990234375, 0.0030364990234375, 2.4726104736328125, 35.3,173.75) ">
+<clipPath id="Mask_Mask_3">
+<rect x="-2" y="-2" width="1131.75" height="284" fill="#FFFFFF" stroke="none"/>
+</clipPath>
+
+<text clip-path="url(#Mask_Mask_3)" writing-mode="lr"><tspan x="0" y="210" baseline-shift="0%" kerning="auto" font-family="Renogare_Regular" font-size="200" fill="#FFFFFF" xml:space="preserve">NX</tspan></text>
+</g>
+</svg>

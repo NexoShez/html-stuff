@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NX.games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="images/favicon2.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js" defer></script>
+    <script>
+        
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+
+            if (slideIndex <= 5) {
+                console.log(slides)
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+
+                console.log(slideIndex)
+                console.log(slides[1])
+
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        }
+    </script>
+
+</head>
+
+<div class="topbar" style="z-index: 5;">
+    <h>NX.games</h>
+    <a href="index.html">NX.games.webhome</a>
+    <a href="games.html">NX.games.gamelibrary</a>
+    <a class="active" href="merch.html">NX.games.store</a>
+
+    
+
+    <!-- <div class="glibdropdown">
+        <a href="games.html"><button class="glibdbtn">NX.games.gamelibrary
+            <i class="fa fa-caret-down"></i>
+        </button></a>
+        <div id="glibdropdownid" class="glibddcont">
+            <a href="games.html">NX.games.gamelibrary.main</a>
+            <a href="gamelibrary/meow.html">NX.games.gamelibrary.meow</a>
+            <a href="gamelibrary/meow.html">NX.games.gamelibrary.AF3</a>
+        </div>
+    </div> -->
+</div>
+
+<body class="main">
+    <center>
+        <div class="showbg-main" style="background-color: rgba(0,0,0,0.5);">
+            <div class="vertalign-center" id="header">
+                <header class="titleheaderintro">NX.games.store</header>
+            </div>
+            <div class="vertalign-center" id="subtitle">
+                <p class="subtitleintro" style="font-size: 20px; font-family: 'Montserrat'; font-weight: 600;">
+                    Merch store!!
+                </p>
+            </div>
+        </div>
+
+        <div class="bodymain">
+            <header class="scrollshow">Apparel</header>
+            <div class="merchshow">
+                <div class="merchitem" id="unshown"></div>
+            </div>
+        </div>
+    </center>
+
+    <!-- <footer style="background-color: white; float: right; width: 35%;">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="drop" href="#home">Home</a>
+                <a class="drop" href="#about">About</a>
+                <a class="drop" href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer> -->
+</body>
+
+<footer id="uni"></footer>
+
+</html>
