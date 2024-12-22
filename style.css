@@ -100,7 +100,7 @@ div.spacetext p a {
     text-underline-position: auto;
 }
 
-svg {
+svg:not(.footer-squiggle){
     height: 22px;
     width: 22px;
     color: white;
