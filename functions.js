@@ -125,7 +125,7 @@ function topbar() {
 
 document.getElementById("uni").innerHTML = `
     <center>
-        <div class="spacetext" style="height: 200px; margin: 10px;">
+        <div class="spacetext" style="height: 200px;">
             <div class="email">
 
             </div>
