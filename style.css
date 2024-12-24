@@ -42,7 +42,7 @@ body.main {
 
 .bodymain {
     position: static;
-    background-color: rgb(58, 47, 58);
+    background-color: rgb(20, 17, 20);
     padding: 20px;
 }
 
@@ -50,24 +50,49 @@ body.main {
     margin: 30px;
     border-radius: 14px;
     width: 90%;
-    background-color: rgb(109, 65, 99);
+    background-color: rgb(196, 54, 158);
+}
+
+.subsegment {
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
+    left: 0;
+    display: none;
 }
 
 .segmenttitle {
     font-family: 'Renogare';
     font-size: 60px;
     position: relative;
-    color:rgb(218, 197, 218);
+    color:rgb(20, 17, 20);
     left: 60px;
     top: 20px;
     float: left;
 }
+
+.bio {
+    border-radius: 10px;
+    border-color: rgb(255, 153, 224);
+    border-style: dotted;
+    background-image: url("images/stars.gif");
+    width: 70%;
+    height: auto;
+    text-align: left;
+    padding: 14px;
+}
+.bio p {
+    padding: 0;
+    margin: 0;
+}
+
 .segmentsubtitle {
     font-family: 'Montserrat';
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 500;
     position: relative;
-    color:rgb(218, 197, 218);
+    color:rgb(20, 17, 20);
     left: -380px;
     height: 50px;
     width: 400px;
@@ -81,6 +106,73 @@ body.main {
     height:100%;
     background-color: rgba(0,0,0,0);
     align-content: center;
+}
+
+.leftgif {
+    float: left;
+    z-index: 3;
+    left: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+}
+.rightgif {
+    float: right;
+    z-index: 3;
+    right: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+}
+#gif {
+    margin-bottom: -120px;
+    grid-area: auto;
+}
+
+#no-round {
+    border-radius: 0%;
+}
+
+#touch-edge {
+    margin: 0;
+    width: 100%;
+}
+
+#no-round-touch-edge {
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.current, .current-item {
+    background-color: rgba(0,0,0,0);
+    margin: 10px;
+}
+
+.current-item {
+    display: flex;
+    justify-content: space-between;
+}
+.current-title {
+    background-color: rgb(255, 178, 232);
+    border-width: 5px;
+    border: white;
+    border-style: groove;
+    height: 25%;
+    width: 45%;
+    align-self: center;
+}
+
+.current-img {
+    background-color: rgba(0,0,0,0);
+    border-color: white;
+    border-style: inset;
+    border-width: 3px;
+    width: 45%;
+    height: auto;
+}
+
+img.cur {
+    width: 100%;
+    height: auto;
 }
 
 .segment-pic img {
@@ -196,7 +288,6 @@ div a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 div a.icon {
     float: right;
     background-color: rgba(0, 0, 0, 0);
@@ -524,6 +615,32 @@ div.merchprev {
     z-index: 1000000000;
 }
 
+div.navigation {
+    height:120px;
+    position: sticky;
+    background-color: rgb(178, 255, 168);
+    color: rgba(0,0,0,0);
+    top: 0;
+    z-index: 6;
+}
+div.navigation-nav {
+    background-color: rgba(0,0,0,0);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+div.navigation-nav p {
+    margin: 12px;
+    font-weight: 400;
+    font-style:oblique ;
+    font-family: 'Renogare';
+    color: black;
+    align-content: center;
+    font-size: 26px;
+    cursor: pointer;
+}
+
 .bar {
     background-color: rgba(126, 126, 126, 1);
     top: 0;
@@ -753,10 +870,41 @@ p {
     background-color: #717171;
 }
 
+.on {
+    display:block;
+    animation: fade2;
+    animation-duration: 2s;
+}
+.off {
+    display: block;
+    animation: outfade;
+    animation-duration: 1.5s;
+}
+
 /* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes outfade {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
 }
 
 @keyframes fade {

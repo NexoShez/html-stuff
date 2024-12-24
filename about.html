@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NX | ABOUT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon2.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="functions.js" defer>
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add('scroll-response');
+                    return;
+                }
+                entry.target.classList.remove('scroll-response');
+            });
+        });
+
+        observer.observe(document.querySelector('.devs'));
+    </script>
+</head>
+
+<div class="topbar" id="topbar" style="z-index: 5;">
+    <h>NX.games</h>
+    <a href="index.html">webhome</a>
+    <a href="games.html">gamelibrary</a>
+    <a href="merch.html">store</a>
+    <a class="active" href="about.html">about</a>
+    <a href="javascript:void(0);" class="icon" onclick="topbar()">
+        <i class="fa fa-bars" style="height: 100%; width: auto;"></i>
+    </a>
+
+
+
+    <!-- <div class="glibdropdown">
+        <a href="games.html"><button class="glibdbtn">NX.games.gamelibrary
+            <i class="fa fa-caret-down"></i>
+        </button></a>
+        <div id="glibdropdownid" class="glibddcont">
+            <a href="games.html">NX.games.gamelibrary.main</a>
+            <a href="gamelibrary/meow.html">NX.games.gamelibrary.meow</a>
+            <a href="gamelibrary/meow.html">NX.games.gamelibrary.AF3</a>
+        </div>
+    </div> -->
+</div>
+
+<body class="main">
+    <center>
+        <div class="showbg-main" style="background-color: rgba(0,0,0,0.5);">
+            <div class="vertalign-center" id="header">
+                <header class="titleheaderintro">NX.games.about</header>
+            </div>
+            <div class="vertalign-center" id="subtitle">
+                <p class="subtitleintro" style="font-size: 20px; font-family: 'Montserrat'; font-weight: 600;">
+                    hiiii welcome to my website
+                </p>
+            </div>
+        </div>
+
+        <div class="bodymain" style="padding: 0;">
+            <div class="navigation">
+                <div id="navv" class="navigation-nav">
+                    <p onclick="changepage('bio', 'port', 'faq')"><u>bio</u></p>
+                    <p onclick="changepage('port', 'bio', 'faq')"><u>portfolio</u></p>
+                    <p onclick="changepage('faq', 'port', 'bio')"><u>faq</u></p>
+                </div>
+            </div>
+
+            <div class="main-segment" id="no-round-touch-edge"
+                style="display: flex; justify-content: space-between; height: 1700px; width: 100%; background-color: rgb(38, 0, 43);">
+                <div class="leftgif" style="width: 332; height: 100%;">
+                    <img id="gif"
+                        src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                        width="332" height="1600" loading="lazy"
+                        style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                        fetchpriority="low" decoding="async">
+                        <img id="gif"
+                            src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                            width="332" height="1600" loading="lazy"
+                            style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                            fetchpriority="low" decoding="async">
+                            <img id="gif"
+                                src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                                width="332" height="1600" loading="lazy"
+                                style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                                fetchpriority="low" decoding="async">
+                </div>
+
+                <!-- <div class="leftgif" style="width: 332px; height: 600px;">
+
+                </div> -->
+
+                <div class="subsegment on" id="bio">
+                    <img src="images/nexi.png" style="width: 90%; height: auto;">
+                    
+                    <div class="bio">
+                        <p>
+                            hiiiiii im nexi :3 im the guy who designed and 
+                            built this website (from scratch), the 
+                            guy who founded NX.games, and the guy 
+                            selling this merch/art :3
+                            <br>
+                            <br>
+                            <br>
+                            i love all support that comes my way <333333
+                            <br>
+                            <br>
+                            <br>
+                            i usually am always open for commissions, generally related to art
+                            <br>
+                            <br>
+                            <br>
+                            i have a passion project named MEOW which is supposed to  be a silly hangout game, but used as practice for anything else :3
+                            <br>
+                            <br>
+                            <br>
+                            its nice to meet u n stuff :3
+                            <br>
+                            <br>
+                            <br>
+                            (random japanese thing i can write lol)
+                            はじめまして！わたしわネクソーくんです！わたしわあめりかじんです！
+                        </p>
+                    </div>
+
+                    <img src="images/line.svg" style="width: 90%; height: auto; margin: 24px;">
+
+                    <div class="current">
+                        <div class="current-item">
+                            <div class="current-title">
+                                <p>
+                                    what ime currently watching
+                                </p>
+                                <p style="font-size: x-small; margin-top: -20px;">
+                                    (azumanga daioh: the animation)
+                                </p>
+                            </div>
+
+                            <div class="current-img">
+                                <img class="cur" src="images/about/azumanga.gif">
+                            </div>
+                        </div>
+                        <div class="current-item">
+                            <div class="current-title">
+                                <p>
+                                    what ime currently reading
+                                </p>
+                                <p style="font-size: x-small; margin-top: -20px;">
+                                    (persona 4)
+                                </p>
+                            </div>
+
+                            <div class="current-img">
+                                <img class="cur" src="images/about/p4.png">
+                            </div>
+                        </div>
+                        <div class="current-item">
+                            <div class="current-title">
+                                <p>
+                                    what ime currently playing
+                                </p>
+                                <p style="font-size: x-small; margin-top: -20px;">
+                                    (persona 5 royal)
+                                </p>
+                            </div>
+
+                            <div class="current-img">
+                                <img class="cur" src="images/about/p5r.gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="images/line.svg" style="width: 90%; height: auto; margin: 24px;">
+
+                    <div class="info">
+
+                    </div>
+                    <img src="images/line.svg" style="width: 90%; height: auto; margin: 24px;">
+                </div>
+
+                <div class="subsegment" id="port">
+                    <img src="images/nexi.png" style="width: 90%; height: auto;">
+                    <img src="images/line.svg" style="width: 90%; height: auto; margin: 24px;">
+                </div>
+
+                <div class="subsegment" id="faq">
+                    <img src="images/nexi.png" style="width: 90%; height: auto;">
+                    <img src="images/line.svg" style="width: 90%; height: auto; margin: 24px;">
+                </div>
+                
+                <!-- <div class="rightgif" style="width: 332px; height: 600px;">
+
+                </div> -->
+
+                <div class="rightgif" style="width: 332; height: 100%;">
+                    <img id="gif"
+                        src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                        width="332" height="1600" loading="lazy"
+                        style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                        fetchpriority="low" decoding="async">
+                        <img id="gif"
+                            src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                            width="332" height="1600" loading="lazy"
+                            style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                            fetchpriority="low" decoding="async">
+                            <img id="gif"
+                                src="https://static.wixstatic.com/media/32069a_712799b8369f4e5e9cd28c0611141107~mv2.gif" alt="stars"
+                                width="332" height="1600" loading="lazy"
+                                style="width: 332px; height: 600px; object-fit: cover; object-position: 50% 50%;"
+                                fetchpriority="low" decoding="async">
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <!-- <footer style="background-color: white; float: right; width: 35%;">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="drop" href="#home">Home</a>
+                <a class="drop" href="#about">About</a>
+                <a class="drop" href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer> -->
+</body>
+<footer id="uni"></footer>
+
+</html>
