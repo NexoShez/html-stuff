@@ -72,6 +72,24 @@ body.main {
     float: left;
 }
 
+.subsegment-title {
+    font-size: 40px;
+    text-decoration: dotted;
+}
+
+.img-container {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+.storep, .privnsafe {
+    background-color: rgba(0,0,0,0);
+}
+.storep h2, .privnsafe h2 {
+    color: white;
+    text-shadow: #000;
+}
+
 .bio {
     border-radius: 10px;
     border-color: rgb(255, 153, 224);
@@ -85,6 +103,17 @@ body.main {
 .bio p {
     padding: 0;
     margin: 0;
+}
+
+div.faq {
+    border-radius: 10px;
+    border-color: rgb(203, 171, 255);
+    border-style: groove;
+    border-style: dashed;
+    width: 80%;
+    padding: 14px;
+    background-color: rgb(220, 255, 238);
+    box-shadow: #000;
 }
 
 .segmentsubtitle {
