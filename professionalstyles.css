@@ -35,6 +35,11 @@ div.img {
     height: 100%;
     padding: 0;
 }
+div.img p {
+    /* display: block; */
+    justify-items: center;
+    vertical-align: middle;
+}
 div.bio p {
     width: 95%;
     text-align: right;
