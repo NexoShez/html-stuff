@@ -55,6 +55,14 @@ function cctog() {
   }
 }
 
+function enlargeImage(x) {
+  
+}
+
+function _return() {
+
+}
+
 function changepage(page, p2, p3) {
   document.getElementsByClassName('on').classList = "subsegment off"
   sleep(150)
@@ -143,7 +151,6 @@ document.getElementById("uni").innerHTML = `
     <center>
         <div class="spacetext" style="height: 200px;">
             <div class="email">
-
             </div>
 
             <div style="z-index: 5; width: 40px; height: 100%; background-color: rgba(0,0,0,0);">

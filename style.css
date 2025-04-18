@@ -105,6 +105,58 @@ body.main {
     margin: 0;
 }
 
+.portsegment {
+    width: 95%;
+    border-radius: 10px;
+    background-color: rgb(59, 0, 66);
+    height: 550px;
+}
+
+#imgright p {
+    width: 40%;
+    float: left;
+    height: auto;
+    padding-top: 17.5%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-grid img {
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    flex: 50%;
+    object-fit: cover;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.img-grid img:hover {
+    animation: scale5nopad_hover 1.2s ease-in-out cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes scale5nopad_hover {
+    from {
+        scale: 0%;
+        padding: 0;
+    }
+
+    to {
+        scale: 5%;
+        padding: -5%;
+    }
+}
+
+.img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 70%;
+    float: right;
+    background-color: rgba(0,0,0,0);
+}
+
+
 div.faq {
     border-radius: 10px;
     border-color: rgb(203, 171, 255);
@@ -220,6 +272,9 @@ div.faq {
     width: 45%;
     align-self: center;
 }
+.current-title p {
+    color: black;
+}
 
 .current-img {
     background-color: rgba(0,0,0,0);
@@ -309,7 +364,7 @@ footer {
 }
 
 div.socials {
-    width: 10%;
+    width: min-content;
     justify-content: space-around;
     display: flex;
     border-radius: 10px;
@@ -692,6 +747,16 @@ div.navigation-nav {
     position: sticky;
 }
 div.navigation-nav p {
+    margin: 12px;
+    font-weight: 400;
+    font-style:oblique ;
+    font-family: 'Renogare';
+    color: black;
+    align-content: center;
+    font-size: 26px;
+    cursor: pointer;
+}
+div.navigation-nav a {
     margin: 12px;
     font-weight: 400;
     font-style:oblique ;

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Egyptian+Hieroglyphs&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url("https://use.typekit.net/rdd6jch.css");
+
+@font-face {
+    font-family: 'Renogare';
+    src: url('fonts/Renogare-Regular.otf');
+}
+
+body.portfolio {
+    background-color: rgb(255, 236, 236);
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+div.img img {
+    scale: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    width: auto;
+    height: 85%;
+}
+
+div.bio {
+    width: 47%;
+    height: 100%;
+    /* overflow-y: scroll; */
+    padding: 0; 
+}
+div.img {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+div.bio p {
+    width: 95%;
+    text-align: right;
+    clip-path: view-box;
+    padding: 0%;
+    float: right;
+    /* padding-top: 10px; */
+    /* padding-right: 12px; */
+}
+
+div.navig {
+    justify-self: center;
+    width:auto;
+    height: 24px;
+    align-content: center;
+    float: none;
+    padding-bottom: 0;
+}
+div.navig p {
+    width: 100px;
+    display: inline-block;
+    padding: 0;
+    float: none;
+}
+
+div.navig a {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: 'Renogare';
+    color: black;
+    float: none;
+    display: inline-block;
+}
+
+div.seperator {
+    background-color: rgb(0,0,0,0);
+    height: 450px;
+    width: 100%;
+}
+
+div.dim {
+    background-color: rgba(0,0,0,0.05);
+    height: 450px;
+    width: 100%;
+}
+
+div.dim header,div.dim h4 {
+    padding: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+div.seperator header,div.seperator h4 {
+    padding: 0px;
+    margin-left: 10px;
+    margin: 0;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+div.dim h4 {
+    font-size: 18px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+div.seperator h4 {
+    font-size: 18px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+div.dim header {
+    font-size: 35px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+div.seperator header {
+    font-size: 35px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+p, h2, h3 {
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+header, h2, h3, p {
+    margin: 0;
+    padding: 16px;
+}
+
+header {
+    font-family: 'Renogare';
+    text-align: center;
+    font-size: 48px;
+
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+
+div.topinfo {
+    background-color: rgba(0,0,0,0.2);
+    height: 250px;
+}
+
+footer {
+    height: 250px;
+}
