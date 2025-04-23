@@ -7,7 +7,27 @@
     <link rel="icon" type="image/x-icon" href="images/favicon2.svg">
     <link rel="stylesheet" href="professionalstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="functions.js" defer>
+    <script>
+
+        function imageViewer(element) {
+            var image = element.image
+            var overlay = document.getElementById("overlay");
+
+            overlay.classList.add('show');
+        }
+
+        function closeImage() {
+            var overlay = document.getElementById("overlay");
+
+            overlay.classList.remove('show');
+        }
+
+        document.onkeypress = function (e) {
+            let key = e.key;
+            if (key=="q"||key=="Q") {
+                closeImage();
+            }
+        };
     </script>
 </head>
 <!-- 
@@ -36,13 +56,12 @@
 </div> -->
 
 <body class="portfolio">
+    <div class="overlay" id="overlay">
+    </div>
+
     <div class="topinfo">
-        <header>
-            NEXI
-        </header>
-        <h2>
-            PORTFOLIO
-        </h2>
+        <img src="images/portfolio/Title.svg"
+            style="height: 57.5%; width: 100%; display: inline-block; margin-top: 16px;">
 
         <div class="navig">
             <p>jump to:</p>
@@ -78,15 +97,14 @@
     </div>
     </div>
 
-    <div class="seperator" style="display: flex;">
+    <div class="seperator" style="display: flex; padding-top: 26px; padding-bottom: 26px; flex:auto;">
         <div class="img">
-            <img src="images/portfolio img.png">
-            <p> placeholder before i can draw it fr</p>
+            <img src="images/portfolio/image.svg">
         </div>
         <div class="bio">
             <p>
                 <br />
-                Hello, my name is Ephraim (Or "Nexi" for you onliners), I am a...
+                Hello, my name is Ephraim ("Nexi" is what people usually call me when im online), I am a...
                 <br />
                 Animator, Graphic Designer, Videographer, Photographer, A/V Technician,
                 <i><b>FIRST</b></i>® team member, Artist, Video Editor, Game Developer,
@@ -115,33 +133,159 @@
         <h4>
             GALLERY
         </h4>
+
+        <div class="grid-items">
+            <div class="grid-item">
+                <img src="images/MEOW-title.png">
+                <div class="gi-info" onclick="imageViewer()">
+                    MEOW v0.2 Logo
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/MEOW-title.png">
+                <div class="gi-info" onclick="imageViewer()">
+                    MEOW v0.1 Logo - Gambling Vers
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/MEOW-title.png">
+                <div class="gi-info" onclick="imageViewer()">
+                    MEOW v0.1 Logo
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="seperator" id="item2">
         <header>
-            FANART AND PRODUCTS
+            PRODUCTS
         </header>
         <h4>
             GALLERY
         </h4>
+
+        <div class="grid-items">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
     </div>
 
-    <div class="dim" id="item3">
+    <div class="seperator dim" id="item3">
         <header>
             DIGITAL CONTENT
         </header>
         <h4>
             & MORE
         </h4>
+
+        <div class="grid-items">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
     </div>
 
     <div class="seperator" id="item4">
         <header>
             PERSONAL PROJECTS
         </header>
+
+        <div class="grid-items">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
     </div>
 
-    <div class="dim" id="contacts">
+    <div class="seperator dim" id="contacts">
         <header>
             CONTACT
         </header>
