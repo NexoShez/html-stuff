@@ -10,14 +10,25 @@
     <script>
 
         function imageViewer(element) {
-            var image = element.image
+            console.log(element);
+            const img = element.parentElement.querySelector('img').src;
+            const alt = element.parentElement.querySelector('img').alt;
             var overlay = document.getElementById("overlay");
+            var overlayimg = document.getElementById("overlayimg");
+            var text = document.getElementById("ovtext");
+
+            overlayimg.src = img;
+            text.innerHTML = alt;
+            overlayimg.classList.add('act');
+
 
             overlay.classList.add('show');
         }
 
         function closeImage() {
             var overlay = document.getElementById("overlay");
+            var overlayimg = document.getElementById("overlayimg");
+            overlayimg.classList.remove('act');
 
             overlay.classList.remove('show');
         }
@@ -57,6 +68,13 @@
 
 <body class="portfolio">
     <div class="overlay" id="overlay">
+        <img src="" id="overlayimg">
+        <p style="margin-top: -85px; width: 100%; cursor: pointer;" onclick="closeImage()">
+            Press Q to close
+        </p>
+        <h3 style="margin-top: -85px; width: 100%;" id="ovtext">
+            Default
+        </h3>
     </div>
 
     <div class="topinfo">
@@ -136,20 +154,44 @@
 
         <div class="grid-items">
             <div class="grid-item">
-                <img src="images/MEOW-title.png">
-                <div class="gi-info" onclick="imageViewer()">
+                <img src="images/portfolio/2025impact.png" alt="I made this design for my FIRST Robotics teams website.">
+                <div class="gi-info" onclick="imageViewer(this)">
+                    FRC 2557 2025 Clackamas Impact Award Slide
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/portfolio/2024Clack.png" alt="I made this design for my FIRST Robotics teams website.">
+                <div class="gi-info" onclick="imageViewer(this)">
+                    FRC 2557 2024 Clackamas Winner Slide
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/portfolio/new-v0.2.png" alt="This is the most recent version of the MEOW logo.">
+                <div class="gi-info" onclick="imageViewer(this)">
                     MEOW v0.2 Logo
                 </div>
             </div>
             <div class="grid-item">
-                <img src="images/MEOW-title.png">
-                <div class="gi-info" onclick="imageViewer()">
-                    MEOW v0.1 Logo - Gambling Vers
+                <img src="images/portfolio/v0.2.1.png" alt="This is the logo that was going to be used, but roblox said it was too inappropiate.">
+                <div class="gi-info" onclick="imageViewer(this)">
+                    MEOW v0.2 (Removed) Logo
                 </div>
             </div>
             <div class="grid-item">
-                <img src="images/MEOW-title.png">
-                <div class="gi-info" onclick="imageViewer()">
+                <img src="images/portfolio/v0.10.1.png" alt="This is the logo that was used for a short time before being replaced with the v0.2.">
+                <div class="gi-info" onclick="imageViewer(this)">
+                    MEOW v0.1.10 Logo
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/portfolio/v0.1.9-AGAIN.png" alt="This is the v0.1.9 logo, it was used for a short time before being replaced with the v0.1.10 logo. v0.1.9 was the 'gambling' update.">
+                <div class="gi-info" onclick="imageViewer(this)">
+                    MEOW v0.1.9 Logo - Gambling Vers
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/portfolio/icon.png" alt="This is the original logo used for MEOW.">
+                <div class="gi-info" onclick="imageViewer(this)">
                     MEOW v0.1 Logo
                 </div>
             </div>

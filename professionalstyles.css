@@ -82,11 +82,13 @@ div.bio p {
 
 div.navig {
     justify-self: center;
+    display: flex;
+    justify-content:center;
     width:auto;
-    height: 24px;
+    height: auto;
     align-content: center;
     float: none;
-    padding-bottom: 0;
+    padding-bottom: 0; 
 }
 div.navig p {
     width: 100px;
@@ -154,10 +156,8 @@ div.seperator h4 {
 div.grid-item img {
     height: 100%;
     width: auto;
-    /* justify-content: center; */
-    /* align-content: center; */
-  /* left: -20%; */
-    margin-left: -45%;
+    object-fit: cover;
+    /* margin-left: -25%; */
 }
 .long {
     height: auto;
@@ -183,6 +183,7 @@ div.gi-info {
   font-family: 'Montserrat';
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
   /* color: white; */
 }
 div.gi-info:hover {
@@ -191,7 +192,7 @@ div.gi-info:hover {
 div.overlay {
     z-index: -10;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
@@ -224,6 +225,18 @@ div.overlay {
 }
 .overlay.close.nokeyboard {
     width: 100%;
+}
+.overlay img {
+    width: 100%;
+    height: 100%;
+    scale: 75%;
+    /* padding: 12.5%; */
+    object-fit:scale-down;
+    display: none;
+    transition: all .3s ease-in-out;
+}
+.overlay img.act {
+    display: block;
 }
 div.dim header {
     font-size: 35px;
