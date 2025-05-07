@@ -157,7 +157,6 @@ div.grid-item img {
     height: 100%;
     width: auto;
     object-fit: cover;
-    /* margin-left: -25%; */
 }
 .long {
     height: auto;
@@ -226,7 +225,7 @@ div.overlay {
 .overlay.close.nokeyboard {
     width: 100%;
 }
-.overlay img {
+.overlay img.overlayimg {
     width: 100%;
     height: 100%;
     scale: 75%;
@@ -235,7 +234,7 @@ div.overlay {
     display: none;
     transition: all .3s ease-in-out;
 }
-.overlay img.act {
+.overlay img.overlayimg.act {
     display: block;
 }
 div.dim header {
